@@ -17,8 +17,8 @@ function actualizarColores() {
 function aplicarTema(tema) {
     raiz.dataset.theme = tema;
     const oscuro = tema === 'oscuro';
-    botonTema.textContent = oscuro ? 'Tema claro' : 'Tema oscuro';
     botonTema.setAttribute('aria-pressed', String(oscuro));
+    botonTema.setAttribute('aria-label', oscuro ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro');
     actualizarColores();
 }
 

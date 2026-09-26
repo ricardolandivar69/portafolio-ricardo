@@ -16,12 +16,9 @@
     <a class="saltar" href="#contenido">Saltar al contenido</a>
 
     <header class="encabezado">
-        <div class="contenedor barra">
-            <a class="marca" href="#inicio">Ricardo<span>.</span></a>
-            <div class="acciones acciones-header">
-                <button id="boton-tema" class="boton boton-secundario" type="button" aria-pressed="false" hidden>Tema oscuro</button>
-                <button id="boton-menu" class="boton boton-secundario" type="button" aria-controls="menu-principal" aria-expanded="false" hidden>Menú</button>
-            </div>
+        <div class="contenedor barra barra-header">
+            <a class="marca" href="#inicio">Ricardo Landívar<span>.</span></a>
+
             <nav id="menu-principal" class="navbar" aria-label="Navegación principal">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre-mi">Sobre mí</a>
@@ -30,6 +27,15 @@
                 <a href="#componentes">Design System</a>
                 <a href="#contacto">Contacto</a>
             </nav>
+
+            <div class="acciones acciones-header">
+                <button id="boton-tema" class="theme-switch" type="button" aria-pressed="false" aria-label="Cambiar a tema oscuro" hidden>
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                    <span class="theme-track" aria-hidden="true"><span class="theme-thumb"></span></span>
+                    <span class="theme-icon" aria-hidden="true">☾</span>
+                </button>
+                <button id="boton-menu" class="boton boton-secundario" type="button" aria-controls="menu-principal" aria-expanded="false" hidden>Menú</button>
+            </div>
         </div>
     </header>
 
@@ -74,7 +80,7 @@
             <aside class="hero-panel" aria-label="Resumen visual del perfil">
                 <div class="perfil-card">
                     <figure class="perfil">
-                        <img src="img/foto-perfil.jpg" width="400" height="400" alt="Foto de perfil de Ricardo Landívar">
+                        <img src="img/foto-perfil.jpg?v=2" width="400" height="400" alt="Foto de perfil de Ricardo Landívar">
                         <figcaption>Ricardo Landívar · techlab.ec</figcaption>
                     </figure>
 
@@ -126,43 +132,77 @@
         </section>
 
         <section id="habilidades" class="contenedor seccion" aria-labelledby="titulo-habilidades">
-            <div class="encabezado-seccion">
+            <div class="encabezado-seccion habilidades-encabezado">
                 <p class="antetitulo">02 / CONOCIMIENTOS</p>
-                <h2 id="titulo-habilidades">Habilidades / Skills</h2>
-                <p class="texto-secundario texto-intro">Estas son las áreas en las que tengo experiencia práctica y aprendizaje activo.</p>
+                <h2 id="titulo-habilidades">Habilidades técnicas</h2>
+                <span class="linea-titulo" aria-hidden="true"></span>
+                <p class="texto-secundario texto-intro">Tecnologías y áreas en las que tengo experiencia práctica o me encuentro desarrollando conocimientos.</p>
             </div>
 
-            <div class="rejilla habilidades-grid">
-                <article class="panel skill-card">
-                    <div class="icono-card">&lt;/&gt;</div>
+            <div class="habilidades-tecnicas-grid">
+                <article class="grupo-habilidades">
                     <h3>Desarrollo web</h3>
-                    <ul class="lista-skills">
-                        <li><span class="badge">HTML5</span><p>Estructura semántica y organización del contenido.</p></li>
-                        <li><span class="badge">CSS3</span><p>Grid, Flexbox, responsive design y componentes reutilizables.</p></li>
-                        <li><span class="badge">JavaScript</span><p>Interacciones básicas, DOM, filtros y comportamiento visual.</p></li>
-                        <li><span class="badge">React</span><p>Base conceptual de componentes y estado.</p></li>
+                    <ul class="skills-detalle">
+                        <li>
+                            <span class="skill-symbol skill-html" aria-hidden="true">5</span>
+                            <div class="skill-copy"><strong>HTML5</strong><span>Intermedio</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-css" aria-hidden="true">3</span>
+                            <div class="skill-copy"><strong>CSS3</strong><span>Intermedio</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-js" aria-hidden="true">JS</span>
+                            <div class="skill-copy"><strong>JavaScript</strong><span>Básico</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-react" aria-hidden="true">⚛</span>
+                            <div class="skill-copy"><strong>React</strong><span>Básico</span></div>
+                        </li>
                     </ul>
                 </article>
 
-                <article class="panel skill-card">
-                    <div class="icono-card">⚙</div>
-                    <h3>Herramientas</h3>
-                    <ul class="lista-skills">
-                        <li><span class="badge">WordPress</span><p>Edición de contenido, estructura y mantenimiento de sitios.</p></li>
-                        <li><span class="badge">Elementor</span><p>Maquetación visual y correcciones responsive.</p></li>
-                        <li><span class="badge">Git / GitHub</span><p>Versionado, repositorios y publicación en GitHub Pages.</p></li>
-                        <li><span class="badge">Node.js</span><p>Entorno base para trabajar con JavaScript.</p></li>
+                <article class="grupo-habilidades">
+                    <h3>CMS &amp; herramientas</h3>
+                    <ul class="skills-detalle">
+                        <li>
+                            <span class="skill-symbol skill-wp" aria-hidden="true">W</span>
+                            <div class="skill-copy"><strong>WordPress</strong><span>Intermedio</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-elementor" aria-hidden="true">E</span>
+                            <div class="skill-copy"><strong>Elementor</strong><span>Intermedio</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-git" aria-hidden="true">⑂</span>
+                            <div class="skill-copy"><strong>Git / GitHub</strong><span>Básico</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-node" aria-hidden="true">N</span>
+                            <div class="skill-copy"><strong>Node.js</strong><span>Básico</span></div>
+                        </li>
                     </ul>
                 </article>
 
-                <article class="panel skill-card">
-                    <div class="icono-card">🛠</div>
+                <article class="grupo-habilidades">
                     <h3>Soporte técnico</h3>
-                    <ul class="lista-skills">
-                        <li><span class="badge">Hardware</span><p>Ensamble, selección de componentes y upgrades.</p></li>
-                        <li><span class="badge">Diagnóstico</span><p>Detección de fallas y resolución de problemas en equipos.</p></li>
-                        <li><span class="badge">Mantenimiento</span><p>Limpieza, prevención y mejora del rendimiento.</p></li>
-                        <li><span class="badge">Asistencia remota</span><p>Configuración, instalación de software y soporte al usuario.</p></li>
+                    <ul class="skills-detalle">
+                        <li>
+                            <span class="skill-symbol skill-hardware" aria-hidden="true">CPU</span>
+                            <div class="skill-copy"><strong>Hardware</strong><span>Avanzado</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-diagnostico" aria-hidden="true">✓</span>
+                            <div class="skill-copy"><strong>Diagnóstico</strong><span>Avanzado</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-mantenimiento" aria-hidden="true">⚙</span>
+                            <div class="skill-copy"><strong>Mantenimiento</strong><span>Avanzado</span></div>
+                        </li>
+                        <li>
+                            <span class="skill-symbol skill-remoto" aria-hidden="true">↗</span>
+                            <div class="skill-copy"><strong>Asistencia remota</strong><span>Avanzado</span></div>
+                        </li>
                     </ul>
                 </article>
             </div>

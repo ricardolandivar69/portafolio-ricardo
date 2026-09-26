@@ -539,3 +539,259 @@ ul { padding-left: var(--space-lg); }
         width: 100%;
     }
 }
+
+/* =========================================================
+   Ajustes visuales: navegación, switch de tema y habilidades
+   ========================================================= */
+
+.encabezado .contenedor {
+    width: min(96%, 96rem);
+    max-width: none;
+}
+
+.barra-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.8rem 1rem;
+}
+
+.barra-header .marca {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.barra-header .acciones-header {
+    justify-self: end;
+    flex-wrap: nowrap;
+}
+
+.theme-switch {
+    min-width: 6.1rem;
+    height: 2.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.48rem;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-text);
+    background: color-mix(in srgb, var(--color-surface-strong) 84%, transparent);
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.theme-switch:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--color-primary) 35%, var(--color-border));
+}
+
+.theme-icon {
+    width: 1rem;
+    font-size: 0.94rem;
+    line-height: 1;
+    color: var(--color-text-muted);
+}
+
+.theme-track {
+    position: relative;
+    width: 2.3rem;
+    height: 1.25rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--color-text-muted) 20%, transparent);
+    border: 1px solid var(--color-border);
+    transition: background 180ms ease;
+}
+
+.theme-thumb {
+    position: absolute;
+    top: 50%;
+    left: 0.14rem;
+    width: 0.92rem;
+    height: 0.92rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    transform: translateY(-50%);
+    transition: transform 180ms ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-switch[aria-pressed="true"] .theme-track {
+    background: color-mix(in srgb, var(--color-primary) 28%, transparent);
+}
+
+.theme-switch[aria-pressed="true"] .theme-thumb {
+    transform: translate(1.02rem, -50%);
+}
+
+.habilidades-encabezado {
+    margin-bottom: 2rem;
+}
+
+.linea-titulo {
+    display: block;
+    width: clamp(8rem, 22vw, 16rem);
+    height: 0.22rem;
+    margin: 0.1rem 0 0.15rem;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.habilidades-tecnicas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+}
+
+.grupo-habilidades {
+    min-width: 0;
+    padding: clamp(1.2rem, 2vw, 1.7rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: linear-gradient(180deg,
+        color-mix(in srgb, var(--color-surface-strong) 90%, transparent),
+        color-mix(in srgb, var(--color-surface) 96%, transparent));
+    box-shadow: var(--shadow-card);
+}
+
+.grupo-habilidades h3 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.15rem, 1rem + 0.5vw, 1.4rem);
+}
+
+.skills-detalle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.82rem;
+}
+
+.skills-detalle li {
+    display: grid;
+    grid-template-columns: 3.1rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: center;
+    min-height: 4.6rem;
+    padding: 0.8rem 0.95rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.95rem;
+    background: color-mix(in srgb, var(--color-surface-strong) 74%, transparent);
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.skills-detalle li:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--color-primary) 28%, var(--color-border));
+    background: color-mix(in srgb, var(--color-surface-strong) 90%, transparent);
+}
+
+.skill-symbol {
+    width: 2.7rem;
+    height: 2.7rem;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    border-radius: 0.8rem;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 6px 16px rgba(15, 23, 42, 0.12);
+}
+
+.skill-html { background: #e34f26; }
+.skill-css { background: #1572b6; }
+.skill-js { background: #f7df1e; color: #171717; }
+.skill-react { background: #20232a; color: #61dafb; font-size: 1.45rem; }
+.skill-wp { background: #21759b; }
+.skill-elementor { background: #92003b; }
+.skill-git { background: #f05032; font-size: 1.45rem; }
+.skill-node { background: #3c873a; }
+.skill-hardware { background: #2457ff; font-size: 0.67rem; letter-spacing: 0.02em; }
+.skill-diagnostico { background: #0f766e; font-size: 1.3rem; }
+.skill-mantenimiento { background: #7c3aed; font-size: 1.25rem; }
+.skill-remoto { background: #475569; font-size: 1.3rem; }
+
+.skill-copy {
+    min-width: 0;
+    display: grid;
+    gap: 0.14rem;
+}
+
+.skill-copy strong {
+    font-size: 0.98rem;
+    line-height: 1.25;
+}
+
+.skill-copy span {
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+@media (min-width: 48rem) {
+    .barra-header {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 1.2rem;
+    }
+
+    .barra-header #menu-principal,
+    .barra-header.con-js #menu-principal:not(.abierto),
+    .con-js .barra-header #menu-principal:not(.abierto) {
+        justify-self: start;
+        margin-left: clamp(1.5rem, 4vw, 4rem);
+        gap: clamp(0.85rem, 1.6vw, 1.35rem);
+    }
+
+    .barra-header #menu-principal a {
+        font-size: 0.93rem;
+    }
+
+    .habilidades-tecnicas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 70rem) {
+    .habilidades-tecnicas-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 47.99rem) {
+    .barra-header #menu-principal {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .theme-switch {
+        min-width: 5.7rem;
+    }
+}
+
+/* Orden responsivo del encabezado */
+.barra-header .acciones-header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.barra-header #menu-principal {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+@media (min-width: 48rem) {
+    .barra-header .acciones-header {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .barra-header #menu-principal {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
