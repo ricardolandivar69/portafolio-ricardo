@@ -706,7 +706,7 @@ ul { padding-left: var(--space-lg); }
 .skill-html { background: #e34f26; }
 .skill-css { background: #1572b6; }
 .skill-js { background: #f7df1e; color: #171717; }
-.skill-react { background: #20232a; color: #61dafb; font-size: 1.45rem; }
+.skill-python { background: linear-gradient(135deg, #3776ab 0 52%, #ffd43b 52% 100%); color: #ffffff; font-size: 0.88rem; text-shadow: 0 1px 2px rgba(0,0,0,0.28); }
 .skill-wp { background: #21759b; }
 .skill-elementor { background: #92003b; }
 .skill-git { background: #f05032; font-size: 1.45rem; }
