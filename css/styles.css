@@ -222,6 +222,8 @@ ul { padding-left: var(--space-lg); }
 .perfil img {
     width: min(100%, 15rem);
     aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 1.4rem;
     margin: 0 auto 1rem;
     box-shadow: 0 20px 45px rgba(36, 87, 255, 0.18);
