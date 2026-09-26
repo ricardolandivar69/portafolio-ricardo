@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Iniciales RL de Ricardo Landívar">
+  <rect width="320" height="320" rx="24" fill="#15243a"/>
+  <circle cx="270" cy="44" r="102" fill="#1d4ed8"/>
+  <circle cx="30" cy="303" r="92" fill="#0f766e"/>
+  <rect x="32" y="32" width="256" height="256" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.3"/>
+  <text x="160" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="106" font-weight="700" fill="#ffffff">RL</text>
+  <text x="160" y="237" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" letter-spacing="3" fill="#cbd5e1">TECHLAB.EC</text>
+</svg>

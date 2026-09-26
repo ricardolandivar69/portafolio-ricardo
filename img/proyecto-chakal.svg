@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-label="Ilustración representativa del proyecto CHAKAL">
+  <rect width="1000" height="625" fill="#18181b"/>
+  <text x="66" y="84" fill="#eee5d6" font-family="Georgia,serif" font-size="38" letter-spacing="6">CHAKAL</text>
+  <text x="66" y="119" fill="#b7a88f" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">ARTE / GALERÍA / DISEÑO</text>
+  <path d="M66 152H934" stroke="#655946"/>
+  <g stroke="#b59a6e" stroke-width="2">
+    <rect x="66" y="188" width="266" height="294" rx="3" fill="#252427"/>
+    <rect x="366" y="188" width="266" height="294" rx="3" fill="#252427"/>
+    <rect x="666" y="188" width="268" height="294" rx="3" fill="#252427"/>
+    <circle cx="199" cy="323" r="73" fill="none"/>
+    <path d="M150 359l49-110 49 110z" fill="none"/>
+    <path d="M420 398l79-154 79 154zM435 323h128" fill="none"/>
+    <ellipse cx="800" cy="325" rx="59" ry="92" fill="none"/>
+    <path d="M711 325h178M800 233v184" fill="none"/>
+  </g>
+  <g fill="#eee5d6" font-family="Arial,sans-serif" font-size="19" text-anchor="middle">
+    <text x="199" y="523">ORIGINALS</text>
+    <text x="499" y="523">PRINTS</text>
+    <text x="800" y="523">TATTOO DESIGNS</text>
+  </g>
+  <text x="66" y="585" fill="#b7a88f" font-family="Arial,sans-serif" font-size="16">Ilustración representativa · Ajustes visuales en WordPress y Elementor</text>
+</svg>
