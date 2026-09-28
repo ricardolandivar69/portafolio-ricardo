@@ -68,7 +68,7 @@ document.addEventListener('keydown', (evento) => {
     }
 });
 
-window.matchMedia('(min-width: 48rem)').addEventListener('change', cerrarMenu);
+window.matchMedia('(min-width: 70rem)').addEventListener('change', cerrarMenu);
 
 filtros.hidden = false;
 botonesFiltro.forEach((boton) => {

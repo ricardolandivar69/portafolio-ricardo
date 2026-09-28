@@ -1,6 +1,6 @@
 # Portafolio de Ricardo Landívar
 
-Portafolio académico y profesional de Ricardo Sebastián Landívar García, estudiante de Gestión de Tecnología de la Información y fundador de TechLab.ec.
+Portafolio académico y profesional de Ricardo Sebastián Landívar García, Ingeniero de Software enfocado en desarrollo web y fundador de TechLab.ec.
 
 ## Visualización
 
@@ -43,7 +43,7 @@ Por indicación actualizada del docente, se omite el formulario. No se incluyen 
 
 ## Diseño responsive
 
-Base para móviles; dos columnas desde `48rem` y tres columnas en las rejillas principales desde `70rem`. Se utiliza Grid para distribuir secciones y Flexbox para acciones y navegación.
+Diseño mobile-first con ajustes específicos para móvil, tablet y escritorio. En tablet se priorizan composiciones de una o dos columnas y navegación compacta; desde `70rem` se mantiene la composición de escritorio con tres columnas donde corresponde. Se utiliza Grid para distribuir secciones y Flexbox para acciones y navegación.
 
 ## Publicación en GitHub Pages
 
@@ -65,7 +65,7 @@ Si el nombre del repositorio cambia, hay que actualizar también el enlace al re
 - **TechLab**: captura real de la landing HTML/CSS incluida en `proyectos/techlab/`.
 - **CHAKAL**: se utiliza una captura proporcionada por Ricardo para representar el proyecto dentro del portafolio. La participación corresponde a ajustes visuales sobre un sitio existente; el sitio público puede diferir de la copia local intervenida.
 - **Portafolio**: captura de referencia del proyecto.
-- **Avatar**: iniciales RL en formato SVG.
+- **Foto de perfil**: fotografía incluida en `img/foto-perfil.jpg`.
 
 ## Comprobación antes de entregar
 
