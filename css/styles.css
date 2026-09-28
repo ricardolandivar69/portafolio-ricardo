@@ -1247,3 +1247,155 @@ ul { padding-left: var(--space-lg); }
         gap: 0.75rem;
     }
 }
+
+/* =========================================================
+   Hero simplificado: la identidad primero, los detalles abajo
+   ========================================================= */
+
+.hero-rol {
+    max-width: 42rem;
+    margin-bottom: 0.85rem;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.hero-foto {
+    width: 100%;
+    max-width: 24rem;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+    background: linear-gradient(180deg,
+        color-mix(in srgb, var(--color-surface-strong) 92%, transparent),
+        color-mix(in srgb, var(--color-surface) 96%, transparent));
+    box-shadow: var(--shadow-card);
+}
+
+.hero-foto img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.45rem;
+    margin: 0 0 0.85rem;
+    box-shadow: 0 20px 45px rgba(36, 87, 255, 0.14);
+}
+
+.hero-foto figcaption {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Tablet: la fotografía aparece primero y el hero se concentra en identidad. */
+@media (min-width: 48rem) and (max-width: 69.99rem) {
+    .hero {
+        max-width: 54rem;
+        justify-items: center;
+        text-align: center;
+        gap: 1.9rem;
+    }
+
+    .hero-panel {
+        order: -1;
+        justify-content: center;
+    }
+
+    .hero-foto {
+        max-width: 18rem;
+        padding: 0.85rem;
+    }
+
+    .hero-texto {
+        max-width: 46rem;
+    }
+
+    .hero h1 {
+        max-width: 14ch;
+        margin-inline: auto;
+    }
+
+    .hero-rol,
+    .descripcion-hero {
+        margin-inline: auto;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+}
+
+/* Móvil: foto -> nombre -> propósito -> acciones. */
+@media (max-width: 47.99rem) {
+    .hero {
+        padding: 1.75rem 0 2.9rem;
+        gap: 1.35rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .hero-panel {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-foto {
+        max-width: 15.5rem;
+        padding: 0.65rem;
+        border-radius: 50%;
+        background: color-mix(in srgb, var(--color-surface-strong) 92%, transparent);
+    }
+
+    .hero-foto img {
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .hero-foto figcaption {
+        display: none;
+    }
+
+    .hero-antetitulo {
+        display: none;
+    }
+
+    .hero h1 {
+        margin: 0 auto 0.8rem;
+        max-width: 12ch;
+        font-size: clamp(2.25rem, 11.5vw, 3.15rem);
+        line-height: 1.06;
+        text-wrap: balance;
+    }
+
+    .salto-desktop {
+        display: none;
+    }
+
+    .hero-rol {
+        margin: 0 auto 0.65rem;
+        max-width: 25rem;
+        font-size: 1.08rem;
+        line-height: 1.45;
+    }
+
+    .descripcion-hero {
+        margin: 0 auto;
+        max-width: 31rem;
+        color: var(--color-text-muted);
+        font-size: 0.93rem;
+        line-height: 1.55;
+    }
+
+    .hero-cta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(100%, 23rem);
+        margin: 1.25rem auto 0;
+    }
+
+    .hero-cta .boton {
+        min-width: 0;
+        padding-inline: 0.75rem;
+    }
+}

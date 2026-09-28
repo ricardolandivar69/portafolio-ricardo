@@ -15,7 +15,7 @@ Abrir `index.html` en un navegador. También se puede abrir la carpeta en Visual
 
 ## Contenido
 
-- Inicio con presentación personal, resumen visual y métricas.
+- Inicio simplificado con fotografía, nombre, enfoque profesional y llamadas a la acción.
 - Sección Sobre mí con perfil, trayectoria e intereses.
 - Habilidades agrupadas por áreas.
 - Tres proyectos: TechLab.ec, adaptación visual de CHAKAL y este portafolio.
