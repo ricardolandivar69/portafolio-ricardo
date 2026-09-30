@@ -1391,3 +1391,26 @@ ul { padding-left: var(--space-lg); }
         padding-inline: 0.75rem;
     }
 }
+
+/* Cuatro proyectos: composición 2 x 2 en tablet y escritorio. */
+@media (min-width: 48rem) {
+    .proyectos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .proyectos-grid > :last-child {
+        grid-column: auto;
+        display: flex;
+        grid-template-columns: none;
+    }
+
+    .proyectos-grid > :last-child figure,
+    .proyectos-grid > :last-child img {
+        height: auto;
+    }
+
+    .proyectos-grid > :last-child img {
+        aspect-ratio: 8 / 5;
+        object-fit: cover;
+    }
+}

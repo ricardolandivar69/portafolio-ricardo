@@ -18,7 +18,7 @@ Abrir `index.html` en un navegador. También se puede abrir la carpeta en Visual
 - Inicio simplificado con fotografía, nombre, enfoque profesional y llamadas a la acción.
 - Sección Sobre mí con perfil, trayectoria e intereses.
 - Habilidades agrupadas por áreas.
-- Tres proyectos: TechLab.ec, adaptación visual de CHAKAL y este portafolio.
+- Cuatro proyectos: TechLab.ec, FormLab (registro y login), adaptación visual de CHAKAL y este portafolio.
 - Design System con colores, tipografía, espaciados, botones, badges, navegación y card reutilizable.
 - Contacto directo mediante correo, Instagram y GitHub.
 
@@ -63,6 +63,7 @@ Si el nombre del repositorio cambia, hay que actualizar también el enlace al re
 ## Proyectos e imágenes
 
 - **TechLab**: captura real de la landing HTML/CSS incluida en `proyectos/techlab/`.
+- **FormLab**: práctica experimental de registro e inicio de sesión con HTML5, CSS3 y JavaScript, validaciones del lado del cliente y diseño responsive.
 - **CHAKAL**: se utiliza una captura proporcionada por Ricardo para representar el proyecto dentro del portafolio. La participación corresponde a ajustes visuales sobre un sitio existente; el sitio público puede diferir de la copia local intervenida.
 - **Portafolio**: captura de referencia del proyecto.
 - **Foto de perfil**: fotografía incluida en `img/foto-perfil.jpg`.
