@@ -22,11 +22,11 @@ function aplicarTema(tema) {
     actualizarColores();
 }
 
-let temaGuardado = 'claro';
+let temaGuardado = 'oscuro';
 try {
-    temaGuardado = localStorage.getItem('portafolio-tema') || 'claro';
+    temaGuardado = localStorage.getItem('portafolio-tema') || 'oscuro';
 } catch {
-    temaGuardado = 'claro';
+    temaGuardado = 'oscuro';
 }
 
 aplicarTema(temaGuardado === 'oscuro' ? 'oscuro' : 'claro');

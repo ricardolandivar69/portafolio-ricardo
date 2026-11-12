@@ -1,6 +1,6 @@
 # Portafolio de Ricardo Landívar
 
-Portafolio académico y profesional de Ricardo Sebastián Landívar García, Ingeniero de Software enfocado en desarrollo web y fundador de TechLab.ec.
+Portafolio académico y profesional de Ricardo Sebastián Landívar García, Ingeniero de Software enfocado en desarrollo web y fundador de Techlab.ec.
 
 ## Visualización
 
@@ -18,16 +18,16 @@ Abrir `index.html` en un navegador. También se puede abrir la carpeta en Visual
 - Inicio simplificado con fotografía, nombre, enfoque profesional y llamadas a la acción.
 - Sección Sobre mí con perfil, trayectoria e intereses.
 - Habilidades agrupadas por áreas.
-- Cuatro proyectos: TechLab.ec, FormLab (registro y login), adaptación visual de CHAKAL y este portafolio.
+- Cuatro proyectos, con CHAKAL destacado en primer lugar por combinar adaptación visual e integraciones de formularios, pedidos por WhatsApp y correo; luego Techlab.ec, FormLab y este portafolio.
 - Design System con colores, tipografía, espaciados, botones, badges, navegación y card reutilizable.
-- Contacto directo mediante correo, Instagram y GitHub.
+- Contacto mediante correo, Instagram y GitHub; se incluyó el espacio visual de LinkedIn en el pie, pendiente de la URL real del perfil.
 
 Por indicación actualizada del docente, se omite el formulario. No se incluyen inputs ni textarea en el catálogo de componentes, ya que no se utilizan en el sitio.
 
 ## Interacciones
 
 1. Menú desplegable en pantallas pequeñas, cierre al navegar y mediante Escape.
-2. Cambio de tema claro/oscuro, con persistencia mediante `localStorage` cuando el navegador lo permite.
+2. Modo oscuro por defecto; cambio a tema claro/oscuro, con persistencia mediante `localStorage` cuando el navegador lo permite.
 3. Filtro de proyectos por tecnología, con contador de resultados.
 
 ## Organización
@@ -64,8 +64,8 @@ Si el nombre del repositorio cambia, hay que actualizar también el enlace al re
 
 - **TechLab**: captura real de la landing HTML/CSS incluida en `proyectos/techlab/`.
 - **FormLab**: práctica experimental de registro e inicio de sesión con HTML5, CSS3 y JavaScript, validaciones del lado del cliente y diseño responsive.
-- **CHAKAL**: se utiliza una captura proporcionada por Ricardo para representar el proyecto dentro del portafolio. La participación corresponde a ajustes visuales sobre un sitio existente; el sitio público puede diferir de la copia local intervenida.
-- **Portafolio**: captura de referencia del proyecto.
+- **CHAKAL**: imagen proporcionada por Ricardo. El texto refleja su descripción del trabajo realizado: ajustes de interfaz, formularios de pedidos de Latinoamérica, generación de mensaje para WhatsApp con la información completada, referencias/IDs y flujo de correo para imágenes. El código fuente de CHAKAL no forma parte de este repositorio.
+- **Portafolio**: captura actualizada de esta misma versión, con tema oscuro.
 - **Foto de perfil**: fotografía incluida en `img/foto-perfil.jpg`.
 
 ## Comprobación antes de entregar
@@ -79,3 +79,12 @@ Si el nombre del repositorio cambia, hay que actualizar también el enlace al re
 ## Autor y contacto
 
 Ricardo Sebastián Landívar García · `techlab.ec@gmail.com`
+
+
+## LinkedIn (pendiente de URL)
+
+El pie de página incluye el icono de LinkedIn sin enlace activo para evitar dirigir a un perfil equivocado. Cuando el propietario proporcione su URL pública real, sustituir el `span.red-social-pendiente` en `index.html` por un enlace `<a class="red-social" href="URL_LINKEDIN" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ricardo Landívar" title="LinkedIn">...svg...</a>`. El SVG interior se conserva sin cambios.
+
+## Alcance de las descripciones
+
+Los detalles funcionales de CHAKAL se basan en la información proporcionada por el autor. Este repositorio únicamente contiene el portafolio, no el código ni las configuraciones privadas de CHAKAL.

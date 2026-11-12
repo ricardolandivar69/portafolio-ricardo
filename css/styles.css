@@ -1414,3 +1414,56 @@ ul { padding-left: var(--space-lg); }
         object-fit: cover;
     }
 }
+
+
+/* Portafolio 2026 - Proyecto destacado CHAKAL y redes profesionales. */
+.etiqueta-proyecto {
+    color: var(--color-secondary);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+}
+.proyecto-principal {
+    border: 1px solid color-mix(in srgb, var(--color-primary) 40%, var(--color-border));
+    box-shadow: 0 20px 60px color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+.proyecto-principal .cuerpo-tarjeta { gap: .7rem; }
+.proyecto-principal .cuerpo-tarjeta h3 { margin: 0; }
+.proyecto-principal .cuerpo-tarjeta .acciones { gap: .5rem; margin-top: .1rem; }
+.proyecto-principal .badge { padding: .32rem .62rem; font-size: .78rem; }
+.pie-identidad { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.pie-identidad p { margin: 0; }
+.redes-pie { display: flex; gap: .45rem; align-items: center; }
+.red-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: .8rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+a.red-social:hover { transform: translateY(-2px); border-color: var(--color-primary); }
+.red-social-pendiente { opacity: .46; cursor: not-allowed; }
+@media (min-width: 48rem) {
+    .proyectos-grid > .proyecto-principal {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+        align-items: stretch;
+    }
+    .proyectos-grid > .proyecto-principal figure { min-height: 100%; }
+    .proyectos-grid > .proyecto-principal img { height: 100%; min-height: 100%; aspect-ratio: auto; object-fit: cover; }
+}
+@media (min-width: 70rem) {
+    .proyectos-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+    .proyectos-grid > .proyecto-principal { grid-column: 1 / -1; }
+}
+@media (max-width: 47.99rem) {
+    .barra-pie { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .pie-identidad { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}
